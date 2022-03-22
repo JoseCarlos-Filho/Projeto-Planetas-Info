@@ -30,14 +30,36 @@
   font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  
   background: url("./assets/space-galaxy-universe.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+
   color: $cor-fonte-header;
   height: 100vh;
   width: 100%;
   margin: 0;
-  padding: 1em;
-  background-size: cover;
-  -webkit-background-size: cover;
+  padding: 1.5em;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  align-items: center;
+  padding: 20px 10%;
+  border-bottom: 3px solid $cor-boder-bottom;
+}
+
+.nav_planetas li {
+  list-style: none;
+  display: inline-block;
+}
+
+.nav_planetas a {
+  font-weight: 500;
+
 }
 </style>
