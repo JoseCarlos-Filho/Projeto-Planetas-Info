@@ -1,16 +1,16 @@
 <template>
-  <header>
+  <header class="cabecalho">
     <h1 class="titulo">Os Planetas</h1>
-    <nav class="nav_planetas">
+    <nav>
       <ul class="lista_planetas">
-        <li>Mercúrio</li>
-        <li>Vênus</li>
-        <li>Terra</li>
-        <li>Marte</li>
-        <li>Júpiter</li>
-        <li>Saturno</li>
-        <li>Urano</li>
-        <li>Netuno</li>
+        <li><a>Mercúrio</a></li>
+        <li><a>Vênus</a></li>
+        <li><a>Terra</a></li>
+        <li><a>Marte</a></li>
+        <li><a>Júpiter</a></li>
+        <li><a>Saturno</a></li>
+        <li><a>Urano</a></li>
+        <li><a>Netuno</a></li>
       </ul>
     </nav>
   </header>
@@ -36,30 +36,38 @@
   background-size: cover;
 
   color: $cor-fonte-header;
-  height: 100vh;
-  width: 100%;
-  margin: 0;
+  height: 700px;
   padding: 1.5em;
   text-align: center;
 }
 
-header {
+.cabecalho {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
   align-items: center;
   padding: 20px 10%;
   border-bottom: 3px solid $cor-boder-bottom;
 }
 
-.nav_planetas li {
+.cabecalho li {
   list-style: none;
   display: inline-block;
+  padding: 0px 15px;
 }
 
-.nav_planetas a {
+.cabecalho a {
   font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cabecalho a:hover {
+  padding: 5px 5px;
+  border-radius: 8px;
+  background: linear-gradient(to right, hsl(100, 0, 30%), hsl(100, 0, 80%));
 
 }
+
 </style>
