@@ -1,18 +1,62 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Mercurio from '@/views/Mercurio.vue'
 import Terra from '@/views/Terra.vue'
+import Venus from '@/views/Venus.vue'
+import Marte from '@/views/Marte.vue'
+import Jupiter from '@/views/Jupiter.vue'
+import Saturno from '@/views/Saturno.vue'
+import Urano from '@/views/Urano.vue'
+import Netuno from '@/views/Netuno.vue'
+
+
 
 const routes = [
   {
     path: '/Terra',
     name: 'Home',
-    component: Terra,
+    component: Terra
   },
   
   {
     path: '/',
     name: 'Mercurio',
-    component: Mercurio,
+    component: Mercurio
+  },
+
+  {
+    path: '/',
+    name: 'Venus',
+    component: Venus
+  },
+
+  {
+    path: '/',
+    name: 'Marte',
+    component: Marte
+  },
+
+  {
+    path: '/',
+    name: 'Jupiter',
+    component: Jupiter
+  },
+
+  {
+    path: '/',
+    name: 'Saturno',
+    component: Saturno
+  },
+
+  {
+    path: '/',
+    name: 'Urano',
+    component: Urano
+  },
+
+  {
+    path: '/',
+    name: 'Netuno',
+    component: Netuno
   },
 
   
