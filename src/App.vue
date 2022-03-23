@@ -3,9 +3,13 @@
     <h1 class="titulo">Os Planetas</h1>
     <nav>
       <ul class="lista_planetas">
-        <li><a>Mercúrio</a></li>
+        <li>
+          <router-link :to="{ name: 'Mercurio' }">Mercúrio</router-link>
+        </li>
         <li><a>Vênus</a></li>
-        <li><a>Terra</a></li>
+        <li><a>
+          <router-link :to="{ name: 'Home' }">Terra</router-link>
+        </a></li>
         <li><a>Marte</a></li>
         <li><a>Júpiter</a></li>
         <li><a>Saturno</a></li>
@@ -14,12 +18,11 @@
       </ul>
     </nav>
   </header>
-  <!-- <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/> -->
+   
+  <router-view/>
 </template>
+
+
 
 <style lang="scss">
 @import './SCSS/variaveis_cores.scss';
@@ -60,6 +63,7 @@
   font-weight: 500;
   font-size: 15px;
   text-decoration: none;
+  color: white;
   cursor: pointer;
 }
 
@@ -67,7 +71,12 @@
   padding: 5px 5px;
   border-radius: 8px;
   background: linear-gradient(to right, hsl(100, 0, 30%), hsl(100, 0, 80%));
+}
 
+.titulo {
+  font-size: 35px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 </style>
