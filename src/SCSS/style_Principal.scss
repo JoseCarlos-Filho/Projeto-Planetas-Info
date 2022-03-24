@@ -1,0 +1,49 @@
+#app {
+    font-family: "Lato", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    background: url("./assets/space-galaxy-universe.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+  
+    color: $cor-fonte-header;
+    height: 700px;
+    padding: 1.5em;
+    text-align: center;
+  }
+  
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    padding: 20px 10%;
+    border-bottom: 3px solid $cor-boder-bottom;
+  }
+  
+  .cabecalho li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 15px;
+  }
+  
+  .cabecalho a {
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .cabecalho a:hover {
+    padding: 5px 5px;
+    border-radius: 8px;
+    background: linear-gradient(to right, $cor-gradiente1, $cor-gradiente2);
+  }
+  
+  .titulo {
+    font-size: 35px;
+    font-weight: 700;
+    cursor: pointer;
+  }
