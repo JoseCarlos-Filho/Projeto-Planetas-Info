@@ -160,9 +160,10 @@ export default {
     .descricao a {
         text-decoration: none;
         color: gray;
-        font-weight: 700 italic;
+        font-weight: 700;
         border-bottom: 1px solid white;
         cursor: pointer;
+        font-style: italic;
 
     }
 
@@ -171,11 +172,17 @@ export default {
         justify-content: center;
         margin: 10px 0px;
         padding: 10px 20px;
+        
         border: 1px solid #777;
         background: linear-gradient(to left, hsl(100, 0, 20%), hsl(100, 0, 80%));
         cursor: pointer;
+        
         border-radius: 10px;
         box-shadow: 0px 1px 5px hsl(100, 0, 80%);
+
+        font-size: 16px;
+        font-weight: 700;
+        opacity: 0.8;
 
     }
 
