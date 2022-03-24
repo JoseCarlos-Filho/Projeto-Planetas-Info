@@ -3,9 +3,9 @@
         
         <div class="planetaTerra">
             <div>
-                <img class="terra" src="../assets/Terra-bg.png" v-if="mostraVisao">
-                <img class="terra" src="../assets/estrutura-da-terra-bg.png" v-if="mostraEstrutura">
-                <img class="terra" src="../assets/Terra-bg.png" v-if="mostraGeologia">
+                <img class="terra" src="../assets/terra/Terra-bg.png" v-if="mostraVisao">
+                <img class="terra" src="../assets/terra/estrutura-da-terra-bg.png" v-if="mostraEstrutura">
+                <img class="terra1" src="../assets/terra/superficie-terra.jpg" v-if="mostraGeologia">
             </div>   
         </div>
 
@@ -17,21 +17,21 @@
                     Terceiro planeta a partir do Sol e o único planeta conhecido a abrigar vida. 
                     Cerca de 29,2% da superfície da Terra é terra, com os restantes 70,8% cobertos por água. 
                     A distância da Terra ao Sol, as propriedades físicas e a história geológica permitiram 
-                    que a vida evoluísse e prosperasse. <br><br><a href="https://pt.wikipedia.org/wiki/Terra#:~:text=A%20Terra%20%C3%A9%20o%20terceiro,como%20Mundo%20ou%20Planeta%20Azul.">Wikipedia</a>
+                    que a vida evoluísse e prosperasse. <br><a href="https://pt.wikipedia.org/wiki/Terra#:~:text=A%20Terra%20%C3%A9%20o%20terceiro,como%20Mundo%20ou%20Planeta%20Azul.">Wikipedia</a>
                 </p>
 
                 <p v-if="mostraEstrutura">
                     O interior da Terra, como o de outros planetas terrestres, é dividido em camadas por suas 
                     propriedades químicas ou físicas (reológicas). A camada externa é uma crosta sólida de 
                     silicato quimicamente distinta, que é sustentada por um manto sólido altamente viscoso. 
-                    <br><br><a href="https://pt.wikipedia.org/wiki/Terra#:~:text=A%20Terra%20%C3%A9%20o%20terceiro,como%20Mundo%20ou%20Planeta%20Azul.">Wikipedia</a>
+                    <br><a href="https://pt.wikipedia.org/wiki/Terra#:~:text=A%20Terra%20%C3%A9%20o%20terceiro,como%20Mundo%20ou%20Planeta%20Azul.">Wikipedia</a>
                 </p>
 
                 <p v-if="mostraGeologia">
                     A superfície total da Terra é de cerca de 510 milhões de km2. 
                     A crosta continental é constituída por material de menor densidade como as rochas ígneas granito e andesito. 
                     Menos comum é o basalto, uma rocha vulcânica mais densa que é o principal constituinte dos fundos oceânicos. 
-                    <br><br><a href="https://pt.wikipedia.org/wiki/Terra#:~:text=A%20Terra%20%C3%A9%20o%20terceiro,como%20Mundo%20ou%20Planeta%20Azul.">Wikipedia</a>
+                    <br><a href="https://pt.wikipedia.org/wiki/Terra#:~:text=A%20Terra%20%C3%A9%20o%20terceiro,como%20Mundo%20ou%20Planeta%20Azul.">Wikipedia</a>
                 </p> 
 
             </div>
@@ -91,32 +91,63 @@ export default {
 <style lang="scss">
     .infoPlaneta {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
 
     }
-    
+
     .planetaTerra {
-        margin-top: 8em;
+        flex: 2;
     }
     
-    .terra{
-        height: 350px;
-        width: 400px;
+    .planetaTerra div {
+        margin-top: 7em;
+        margin-left: 10px;
+        margin-right: 10px;
     }
+
+    
+    .terra {
+        max-height: 500px;
+        max-width: 500px;
+        height:auto;
+        width:auto;
+         
+        box-shadow: 0px 5px 15px gray;
+        border-radius: 10%;
+    }
+
+    .terra1 {
+        max-height: 500px;
+        max-width: 500px;
+        height:auto;
+        width:auto;
+
+        border: 5px solid gray;
+        border-radius: 10%;
+        box-shadow: 0px 5px 15px gray;
+
+    }
+     
 
     .descricao {
         height:400px;
         width: 400px;
     }
 
-    .descricao h1, p {
+    .descricao h1 {
+        font-size: 70px;
+        font-weight: 700;
+        margin: 0;
         text-align: left;
     }
 
-    .descricao .botoesDescricao {
+    .descricao p {
+        font-weight: 400;
+        opacity: 0.9;
+        line-height: 1.5em;
         text-align: left;
-
+        margin-top: 2em;
     }
 
     .botoesDescricao {
@@ -128,24 +159,29 @@ export default {
 
     .descricao a {
         text-decoration: none;
-        color: black;
-        font-weight: 700;
-        border-bottom: 1px solid black;
+        color: gray;
+        font-weight: 700 italic;
+        border-bottom: 1px solid white;
         cursor: pointer;
 
     }
 
-    button {
+    .btn {
         display: flex;
+        justify-content: center;
         margin: 10px 0px;
         padding: 10px 20px;
-        align-items: center;
         border: 1px solid #777;
+        background: linear-gradient(to left, hsl(100, 0, 20%), hsl(100, 0, 80%));
         cursor: pointer;
-        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px 1px 5px hsl(100, 0, 80%);
 
-        // margin: 10px;
-        // padding: 5px 40px;  
-        // cursor: pointer;      
+    }
+
+    .active {
+        border: 0;
+        background: linear-gradient(to left, rgba(138, 43, 266, 0.5), rgba(138, 43, 226, 1));
+        border-radius: 10px;
     }
 </style>
