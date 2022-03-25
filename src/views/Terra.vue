@@ -1,13 +1,20 @@
 <template>
     <div class="infoPlaneta">
+         <informacaoPlaneta
+
+            :srcPlaneta = imgUrl 
+
+            :clName =  className
+        /> 
         
-        <div class="planetaTerra">
+        
+        <!-- <div class="planetaTerra">
             <div>
                 <img class="terra" src="../assets/terra/Terra-bg.png" v-if="mostraVisao">
                 <img class="terra" src="../assets/terra/estrutura-da-terra-bg.png" v-if="mostraEstrutura">
                 <img class="terra1" src="../assets/terra/superficie-terra.jpg" v-if="mostraGeologia">
             </div>   
-        </div>
+        </div> -->
 
         <div class="descricao">
             <div class="infoTerra">
@@ -56,32 +63,52 @@
 </template>
 
 <script>
+import informacaoPlaneta from '../components/acoes.vue'
+import {ref} from 'vue'
 export default {
     data(){
         return {
-            mostraVisao: true,
-            mostraEstrutura: false,
-            mostraGeologia: false,
+            imgUrl: "terra/Terra-bg.png",
+            className: "terra",
+
+            mostraVisao: ref(true),
+            mostraEstrutura: ref(false),
+            mostraGeologia: ref(false),
         };
+
+        
     },
+    components: {
+        informacaoPlaneta
+    },
+
     methods: {
         
         verVisao() {
-            this.mostraVisao = true;
-            this.mostraEstrutura = false;
-            this.mostraGeologia = false;
+            this.imgUrl = "terra/Terra-bg.png"
+            this.className = "terra"
+
+            this.mostraVisao = ref(true)
+            this.mostraEstrutura = ref(false)
+            this.mostraGeologia = ref(false)
         },
 
         verEstrutura() {
-            this.mostraVisao = false;
-            this.mostraEstrutura = true;
-            this.mostraGeologia = false;
+            this.imgUrl = "terra/estrutura-da-terra-bg.png"
+            this.className = "terra"
+
+            this.mostraVisao = ref(false)
+            this.mostraEstrutura = ref(true)
+            this.mostraGeologia = ref(false)
         },
 
         verGeologia() {
-            this.mostraVisao = false;
-            this.mostraEstrutura = false;
-            this.mostraGeologia = true;
+            this.imgUrl = "terra/superficie-terra.jpg"
+            this.className = "terra1"
+
+            this.mostraVisao = ref(false)
+            this.mostraEstrutura = ref(false)
+            this.mostraGeologia = ref(true)
         },
 
     },
