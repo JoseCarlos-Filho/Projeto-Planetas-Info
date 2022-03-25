@@ -2,7 +2,6 @@
 <div class="planetaTerra">
             <div>
                 <img :class=clName :src="require(`../assets/${srcPlaneta}`)">
-                 
             </div> 
  </div>
 
@@ -32,6 +31,5 @@ import {defineComponent} from 'vue'
 
 </script>
 
-<style>
-
+<style lang="scss">
 </style>
