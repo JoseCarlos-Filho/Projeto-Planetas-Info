@@ -1,5 +1,5 @@
 <template>
-<div class="planetaTerra">
+<div class="planetaOrbita">
             <div>
                 <img :class=clName :src="require(`../assets/${srcPlaneta}`)">
             </div> 

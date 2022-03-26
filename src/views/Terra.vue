@@ -42,7 +42,7 @@ export default {
     data(){
         return {
             imgUrl: "terra/Terra-bg.png",
-            className: "terra",
+            className: "imgPlaneta",
             conteudo: "Terceiro planeta a partir do Sol e o único planeta conhecido a abrigar vida.\n" +
                       "Cerca de 29,2% da superfície da Terra é terra, com os restantes 70,8% cobertos por água.\n" + 
                       "A distância da Terra ao Sol, as propriedades físicas e a história geológica permitiram que a vida\n" + 
@@ -64,7 +64,7 @@ export default {
         
         verVisao() {
             this.imgUrl = "terra/Terra-bg.png"
-            this.className = "terra"
+            this.className = "imgPlaneta"
             this.conteudo = "Terceiro planeta a partir do Sol e o único planeta conhecido a abrigar vida.\n" +
                             "Cerca de 29,2% da superfície da Terra é terra, com os restantes 70,8% cobertos por água.\n" + 
                             "A distância da Terra ao Sol, as propriedades físicas e a história geológica permitiram que a vida\n" + 
@@ -77,7 +77,7 @@ export default {
 
         verEstrutura() {
             this.imgUrl = "terra/estrutura-da-terra-bg.png"
-            this.className = "terra"
+            this.className = "imgPlaneta"
             this.conteudo = "O interior da Terra, como o de outros planetas terrestres, é dividido em camadas por suas\n" +
                             "propriedades químicas ou físicas (reológicas). A camada externa é uma crosta sólida de/n" + 
                             "silicato quimicamente distinta, que é sustentada por um manto sólido altamente viscoso."
@@ -89,7 +89,7 @@ export default {
 
         verGeologia() {
             this.imgUrl = "terra/superficie-terra.jpg"
-            this.className = "terra1"
+            this.className = "imgPlanetaS"
             this.conteudo =  "A superfície total da Terra é de cerca de 510 milhões de km2./n" + 
                              "A crosta continental é constituída por material de menor densidade como as rochas ígneas granito e andesito./n" +  
                              "Menos comum é o basalto, uma rocha vulcânica mais densa que é o principal constituinte dos fundos oceânicos."

@@ -1,5 +1,5 @@
 <template>
-    <div class="infoTerra">
+    <div class="infoPlanetas">
                 <h1>{{ titulo }}</h1>
                 <!-- O atributo "mostra###" é verdadeiro quando selecionado no botão "btn" correspondente.-->
                 <p>
