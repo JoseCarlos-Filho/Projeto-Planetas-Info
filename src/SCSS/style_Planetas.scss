@@ -3,38 +3,41 @@
     justify-content: space-around;
     align-items: center;
 
+    margin-top: 7em;
+    margin-left: 150px;
+    margin-right: 150px;
+
 }
 
 .planetaOrbita {
-    flex: 2;
+     flex: 2;
 
-    margin-top: 7em;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
-// .planetaOrbita div {
-//     margin-top: 7em;
-//     margin-left: 10px;
-//     margin-right: 10px;
-// }
+.planetaOrbita img {
+    height: 450px;
+}
 
+.planetaOrbita .imgPlanetaS {
+    position: absolute;
+    right: 870px;
+    top: 500px;
+    height: 250px;
 
-.imgPlaneta {
-    max-height: 500px;
-    max-width: 500px;
-    height:auto;
-    width:auto;
-     
-    box-shadow: 0px 5px 15px gray;
-    border-radius: 10%;
+}
+
+.infoPlaneta .descricao {
+
+    flex: 1;
+    text-align: left;
 }
 
 .imgPlanetaS {
-    max-height: 500px;
-    max-width: 500px;
-    height:auto;
-    width:auto;
+    // max-height: 500px;
+    // max-width: 500px;
+    height:40%;
+    width:30%;
+    margin-top: -10em;
 
     border: 5px solid gray;
     border-radius: 10%;
@@ -43,27 +46,23 @@
 }
  
 
-.descricao {
-    height:400px;
-    width: 400px;
-}
-
 .descricao h1 {
+    
     font-size: 70px;
     font-weight: 700;
-    margin: 0;
-    text-align: left;
+    margin-top: -1em;
 }
 
 .descricao p {
+
     font-weight: 400;
     opacity: 0.9;
     line-height: 1.5em;
-    text-align: left;
-    margin-top: 2em;
+    margin-top: 15px;
 }
 
 .botoesDescricao {
+
     display: flex;
     flex-direction: column;
     
@@ -71,13 +70,14 @@
 
 
 .descricao a {
+
     text-decoration: none;
     color: gray;
     font-weight: 700;
-    border-bottom: 1px solid white;
-    cursor: pointer;
     font-style: italic;
 
+    border-bottom: 1px solid white;
+    cursor: pointer;
 }
 
 .btn {
