@@ -1,11 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
     font-family: "Lato", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     
     background: url("~@/assets/space-galaxy-universe.png");
-    -webkit-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
+
   
     color: $cor-fonte-header;
     height: 700px;

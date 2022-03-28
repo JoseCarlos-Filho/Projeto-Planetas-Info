@@ -15,14 +15,15 @@
 }
 
 .planetaOrbita img {
-    height: 450px;
+    height: 350px;
 }
 
 .planetaOrbita .imgPlanetaS {
     position: absolute;
-    right: 870px;
+    right: 750px;
     top: 500px;
     height: 250px;
+    width: 500px;
 
 }
 
@@ -33,10 +34,7 @@
 }
 
 .imgPlanetaS {
-    // max-height: 500px;
-    // max-width: 500px;
-    height:40%;
-    width:30%;
+
     margin-top: -10em;
 
     border: 5px solid gray;
@@ -47,10 +45,9 @@
  
 
 .descricao h1 {
-    
+
     font-size: 70px;
     font-weight: 700;
-    margin-top: -1em;
 }
 
 .descricao p {

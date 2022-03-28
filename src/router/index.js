@@ -12,49 +12,49 @@ import Netuno from '@/views/Netuno.vue'
 
 const routes = [
   {
-    path: '/Terra',
-    name: 'Home',
+    path: '/',
+    name: 'Terra',
     component: Terra
   },
   
   {
-    path: '/',
+    path: '/Mercurio',
     name: 'Mercurio',
     component: Mercurio
   },
 
   {
-    path: '/',
+    path: '/Venus',
     name: 'Venus',
     component: Venus
   },
 
   {
-    path: '/',
+    path: '/Marte',
     name: 'Marte',
     component: Marte
   },
 
   {
-    path: '/',
+    path: '/Jupiter',
     name: 'Jupiter',
     component: Jupiter
   },
 
   {
-    path: '/',
+    path: '/Saturno',
     name: 'Saturno',
     component: Saturno
   },
 
   {
-    path: '/',
+    path: '/Urano',
     name: 'Urano',
     component: Urano
   },
 
   {
-    path: '/',
+    path: '/Netuno',
     name: 'Netuno',
     component: Netuno
   },
@@ -71,5 +71,13 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
+
+router.beforeEach((to, from, next) => {
+  console.log(to)
+  console.log(from)
+  next()
+}) 
+  
+
 
 export default router

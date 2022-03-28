@@ -17,7 +17,7 @@
         </li>
 
         <li>
-          <router-link :to="{ name: 'Home' }">Terra</router-link>
+          <router-link :to="{ name: 'Terra' }">Terra</router-link>
         </li>
         
         <li>
@@ -46,7 +46,6 @@
    
   <router-view/>
 </template>
-
 
 
 <style lang="scss">
