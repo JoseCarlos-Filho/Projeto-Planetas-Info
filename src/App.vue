@@ -49,10 +49,10 @@
 
 
 <style lang="scss">
-@import '../src/scss/variaveis_cores.scss';
+@import '~@/scss/variaveis_cores.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Manrope&family=Montserrat:wght@100&family=Overpass:wght@400;700&display=swap');
 
-@import '../src/scss/style_Principal.scss';
+@import '~@/scss/style_Principal.scss';
 
 </style>

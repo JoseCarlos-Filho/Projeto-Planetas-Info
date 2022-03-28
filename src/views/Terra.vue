@@ -104,5 +104,5 @@ export default {
 </script>
 
 <style lang="scss">
-    @import "../scss/style_Planetas.scss";
+    @import '~@/scss/style_Planetas.scss';
 </style>

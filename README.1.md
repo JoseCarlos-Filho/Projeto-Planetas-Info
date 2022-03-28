@@ -23,17 +23,14 @@ de construção da landpage , durante a participação da Comunidade Code.
 
 ### Drescrição
 
-Desenvolver componente interativo de preço que possa ter interação do usuário dia acordo
-com a necessidade de leitura de livros e valor a ser pago aplicando tecnologia HTML, CSS e JavaScript.
+Desenvolver landpage com informações acadêmicas para criança de primeiro e segundo grau,
+neste projeto desafiador foi utilizado framework Vue.JS, Router, SCSS e JavaScrippt como
+elementos de aprendizagem.
 
 ### Funcionalidade
 
-A aplicação possui uma barra com um botão no centro (Tag INPUT do tipo RANGE) na qual o usuário interage
-vizualizando a quantidade de páginas (Tag SPAN ) dejada para leitura informação disposta logo acima da barra
-e o valor do plano também é exibido (Tag SPAN) de acordo com a variação da quantidade de páginas desejada.
-
-Aplicação também dispõe de um botão (Botão do tipo TOGGLE criada em CSS) logo abaixo do preço em que o usuário pode interagir escolhendo
-seu plano de leitura anual ou mensal podendo mostrar os valores de acordo com a interação do usuário.
+A aplicação possui links de planetas onde cada link segue com foto do planeta, cada page possui um
+três botões (Visão, Estrutura, Superfície) contendo informações especificas para cada planeta. 
 
 
 ### Links
