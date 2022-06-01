@@ -5,15 +5,15 @@ module.exports = {
         loaderOptions: {
             scss: {
                     // prependData:
-                    additionalData: `  
-                        @import "~@/variaveis_cores.scss";
-                        @import "~@/style_Planetas.scss";
-                        @import "~@/style_Principal.scss";
+                    prependData: `  
+                        @import "@/scss/variaveis_cores.scss";
+                        @import "@/scss/style_Planetas.scss";
+                        @import "@/scss/style_Principal.scss";
                         `
             },
         }
     }
-}
+};
 
 // const { defineConfig } = require('@vue/cli-service')
 // module.exports = defineConfig({
